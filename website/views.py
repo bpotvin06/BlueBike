@@ -13,7 +13,7 @@ def home():
 @views.route('/2015')
 @login_required
 def yr2015():
-    return render_template("home.html", user=current_user)
+    return render_template("yr2015.html", user=current_user)
 
 
 
