@@ -1,5 +1,4 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
-#import instance 
 from .models import User
 from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
