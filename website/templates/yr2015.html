@@ -5,6 +5,21 @@
 
 <head>
     <h1>This is the year 2015</h1>
+    <br>
+    <h3>All public Bluebike data began in January 2015.</h3>
+    <h3>There were a total of 1,122,558 total bike rides recoreded during this year.</h3>
+    <br>
 </head>
+
+<body>
+    <img logo src="{{ url_for('static', filename='MonthlyRides.png' )}}" class="center" />
+    <h5>Based on this chart we are able to see the rides for the year 2015 broken down by month.</h5>
+    <h5>Clearly, the summer and warm months have a larger amount of rides then in the winter.</h5>
+    <h5>February recorded the least rides (4.02k) and July is recorded having the most rides (175.32k).</h5>
+    <h5>Therefore, we can see an increase of 4,261% from February to July in total rides per month.</h5>
+    <br>
+    
+
+</body>
 
 {% endblock %}
