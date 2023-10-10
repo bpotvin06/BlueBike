@@ -7,7 +7,7 @@
     <h1>This is the year 2015</h1>
     <br>
     <h3>All public Bluebike data began in January 2015.</h3>
-    <h3>There were a total of 1,122,558 total bike rides recoreded during this year.</h3>
+    <h3>There were a total of 1,122,558 total bike rides recorded during this year.</h3>
     <br>
 </head>
 
@@ -18,7 +18,18 @@
     <h5>February recorded the least rides (4.02k) and July is recorded having the most rides (175.32k).</h5>
     <h5>Therefore, we can see an increase of 4,261% from February to July in total rides per month.</h5>
     <br>
-    
+    <img logo src="{{ url_for('static', filename='MonthlyRidesUser.png' )}}" class="center" />
+    <h5>Bluebike categories users by two types, Customer and Subscriber.</h5>
+    <h5>A Subscriber has a monthly or annual membership while a Customer is a single use ride.</h5>
+    <h5>In 2015, Subscribers make up 67% of total rides while Customers make up 33% of rides. </h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='AvgTripUser.png' )}}" class="center" />
+    <h5>When looking at the average trip during (in seconds) by user type, we notice a significant outlier in Customers during March.</h5>
+    <h5>These outlying customers had an average trip of 5,960 seconds (or 1.65 hours).</h5>
+    <h5>While Bluebike has not documented any significant changes for March of 2015, we know that all Bluebikes (called Hubway at the time) came out of "hibernation" by early April 2015.</h5>
+    <h5>Along with late March being the beginning of spring after the snowiest winter Boston has seen since 1995, we may conclude that a mass emergence of bikes emerged prior in March leading to this larger outlier of average trip duration.</h5>
+    <h5>Additionally, by looking at the data another trend emerges, of all Subscriber ride averages being below 2,700 seconds.</h5>
+    <h5>This is due to Subscribers membership restrictions allowing a maximum of 2,700 seconds (45 minutes) per ride without additional charges.</h5>
 
 </body>
 
