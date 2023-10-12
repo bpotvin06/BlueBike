@@ -26,9 +26,24 @@
     <img logo src="{{ url_for('static', filename='AvgTripUser.png' )}}" class="center" />
     <h5>When looking at the average trip during (in seconds) by user type, we notice a significant outlier in Customers during March.</h5>
     <h5>These outlying customers had an average trip of 5,960 seconds (or 1.65 hours) in March 2015.</h5>
-    <h5>With late March being the beginning of spring after Boston's record breaking winter (most snowfall in a single season), we may conclude that average trip duration increased for single use customers at this time to enjoy the increasing warmer weather as the snow slowly melted.</h5>
-    <h5>Additionally, by looking at the data another trend emerges, of all Subscriber ride averages being below 2,700 seconds.</h5>
-    <h5>This is due to Subscribers membership restrictions allowing a maximum of 2,700 seconds (45 minutes) per ride without additional charges.</h5>
+    <h5>With late March being the beginning of spring after Boston's record breaking winter (most snowfall in a single season), we may conclude that average trip duration increased for single use customers at this time to enjoy the increasing warmer weather as the snow melted.</h5>
+    <h5>Subscribers however stayed consistently below 2,700 seconds (45 minutes) per ride as anytime over that results in additional charges.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='TopStartUser.png' )}}" class="center" />
+    <h5>The top 5 annually most started from Bluebike stations are indicated in this graph, along with their corresponding Subscriber and User amounts.</h5>
+    <h5>The most popular station is South Station with 30,800 total rides in 2015. This can larger be due to South Station being an intersection point for commuter rails and buses going into downtown Boston.</h5>
+    <h5>These top 5 starting station </h5>
+    <h5>Subscibers with memberships account for 73.06% of all rides at the top 5 most used starting stations.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='TopEndUser.png' )}}" class="center" />
+    <h5>Similarly, the top 5 annully most ended stations for Bluebike are indicated with their Subsciber and User amounts.</h5>
+    <h5>Subscibers account for 74.77% of all rides ending at the top 5 finishing stations.</h5>
+    <h5>It is important to note that the top 5 finishing stations only account for 5/157 (3.18%) of the total stations in 2015.</h5>
+    <h5>However, these 5 stations account for 11.35% of all rides for ending stations.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='BoxPlot.png' )}}" class="center" />
+    <h5>The median amount of rides that finish at an ending station is 6,220 with first and third quartiles having 2,590 and 10,540 rides respectively.</h5>
+    <h5>Therefore, we can see the top 5 end stations are all nearly, if not more, exceeding double the amount of end rides then the third quartile value with 3/5 stations even being true outliers.</h5>
 
 </body>
 
