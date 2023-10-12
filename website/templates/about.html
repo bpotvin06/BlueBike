@@ -4,7 +4,25 @@
 {% block content %}
 
 <head>
-    <h1>Welcome to the Bluebike analysis and data visualizations</h1>
+    <h1>Welcome to the Bluebike Analysis and Data Visualizations</h1>
 </head>
+
+<body>
+    <br>
+    <br>
+    <h3>The Bluebike data being analyzed on this page is from Bluebike public system data.</h3>
+    <h3>If you would like to view the Bluebike data you can visit their site <a id="BBData" href="https://s3.amazonaws.com/hubway-data/index.html">here</a>.</h3>
+    <br>
+    <h4>Bluebike has already pre-preformed data cleansing on the data sets they published. These include removing trips taken by staff as they serive the 
+        bikes and/or the stations. Additionally, they cleansed trips lasting less than 60 seconds to remove potential false starts and re-docking attempts.</h4>
+    <h4>If you would like to know more information of the history of Bluebike please visit their <a id="BBAbout" href="https://www.bluebikes.com/about#:~:text=In%20April%20of%202011%2C%20Boston,the%20contract%20in%20January%202015.&text=The%20original%20Hubway%20system%20launched,and%2060%20stations%20throughout%20Boston.">about page</a>.</h4>
+    <br>
+    <h4>Data analysis and visualizations were done using the Qlik Sense Cloud Analytics framework.</h4> 
+    <h4>If you would like to learn more information or use Qlik Sense yourself you can get started <a id="Qlik" href="https://www.qlik.com/us/products/qlik-sense#:~:text=Qlik%20Sense%20is%20a%20complete,to%20fully%20customize%20analytics%20solutions.">here</a>.</h4>
+    <br>
+    <h5>This webpage showing the data analysis and visualizations of Bluebike data has been done as a personal project by Brooke Potvin. 
+        The webpage development uses a Flask environment written using Python. User data information is stored using an SQL database system, with passwords protected using a hash sequence.</h5>
+    <h5>View more about Brooke Potvin by visiting her <a id="BP" href="https://www.linkedin.com/in/brookepotvin/">LinkedIn</a>.</h5>
+</body>
 
 {% endblock %}
