@@ -5,6 +5,35 @@
 
 <head>
     <h1>This is the year 2016</h1>
+    <br>
+    <h3>All public Bluebike data began in January 2015.</h3>
+    <h3>There were a total of 1,236,203 total bike rides recorded during this year.</h3>
+    <h3>An increase of 10.12% compared to the previous year.</h3>
+    <br>
 </head>
+
+<body>
+    <img logo src="{{ url_for('static', filename='MonthlyRides2.png' )}}" class="center" />
+    <h5>Based on this chart we are able to see the rides for the year 2015 broken down by month.</h5>
+    <h5>Clearly, the summer and warm months have a larger amount of rides then in the winter.</h5>
+    <h5>January recorded the least rides (12.06k) and August is recorded having the most rides (174.2k).</h5>
+    <h5>Therefore, we can see an increase of 1,344.4% from January to August in total rides per month.</h5>
+    <h5>However, this proportion of increase is less than that noted the previous year, which had an increase of 4,261% from its least to most popular months to take Bluebike rides.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='UserType2.png' )}}" class="center" />
+    <h5>Bluebike categories users by two types, Customer and Subscriber.</h5>
+    <h5>A Subscriber has a monthly or annual membership while a Customer is a single use ride.</h5>
+    <h5>We notice a change in user types since 2015, as Subscribers increased by 20.67% and Customers decreased by 38.18%.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='TripDurationUser2.png' )}}" class="center" />
+    <h5>When looking at the average trip during (in seconds) by user type, we notice a significant outlier in Customers during December.</h5>
+    <h5>These outlying customers had an average trip of 23,520 seconds (or 6.53 hours) in December 2016.</h5>
+    <h5>The winter of 2016 marked the first time in Bluebike history that all stations remained active and not closing due to weather.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='Top5Start2.png' )}}" class="center" />
+    <h5>The top 5 annually most started from Bluebike stations are indicated in this graph, along with their corresponding Subscriber and User amounts.</h5>
+    <h5>The most popular station is at MIT with 35,650 total rides in 2016. This can larger be due to this location being on the Cambridge side of the Harvard Bridge, which connects Cambridge to Boston.</h5>
+    <h5>Subscibers with memberships account for 80.87% of all rides at the top 5 most used starting stations, a larger proportion than the previous year.</h5>
+    <br>
 
 {% endblock %}
