@@ -35,5 +35,26 @@
     <h5>The most popular station is at MIT with 35,650 total rides in 2016. This can larger be due to this location being on the Cambridge side of the Harvard Bridge, which connects Cambridge to Boston.</h5>
     <h5>Subscibers with memberships account for 80.87% of all rides at the top 5 most used starting stations, a larger proportion than the previous year.</h5>
     <br>
+    <img logo src="{{ url_for('static', filename='Top5End2.png' )}}" class="center" />
+    <h5>The top 5 annually most started from Bluebike stations are indicated in this graph, along with their corresponding Subscriber and User amounts.</h5>
+    <h5>The most popular station is at MIT with 36,110 total rides in 2016. For the first time we can note the top starting and endind stations are the same, with only a 460 ride difference between them.</h5>
+    <h5>Consistently, we still see the majority of riders ending at the top 5 finishing stations are Subscribers, accounting for 80.87% of the rides.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='BoxPlot2.png' )}}" class="center" />
+    <h5>The median amount of rides that finish at an ending station is 1,930 with first and third quartiles having 232 and 7,820 rides respectively. This is a significant difference and decrease when compared to the results from 2015.</h5>
+    <h5>Therefore, we can see the top 5 end stations are all exceeding triple the amount of end rides then the third quartile value with all 5 top ending stations even being true outliers.</h5>
+    <h5>Considering this large disparity, having the most used stations be maintained properly is vital to the success of Bluebike.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='GenderUserAmount2.png' )}}" class="center" />
+    <h5>Gender is indicated in this graph by 1 = Male, 2 = Female, 0 = No response.</h5>
+    <h5>Males account for 61.09% of total rides in 2016 (increase of 5.55%), with females representing 20.12% (decrease of 1.23%), and non-responding rides were 18.79% (decrease of 13.45%).</h5>
+    <h5>When looking by user type the Subscribers have a much greater proportion of males, making up 73.12% of their total rides. Females accounted for 24.19% of rides and non-responding customers were only 2.69%.</h5>
+    <h5>For the second year in a row, Bluebikes have been reportly used by males at a much greater proportion.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='BirthYearAmount2.png' )}}" class="center" />
+    <h5>Users of Bluebike have the ability to report their birth year. For 226,610 of the rides (18.33%) birth year was not reported.</h5>
+    <h5>Again the most amount of rides were found to have been taken by respondents born in 1988, making them 28 in 2016.</h5>
+    <br>
+    <br>
 
 {% endblock %}
