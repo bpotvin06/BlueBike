@@ -5,6 +5,40 @@
 
 <head>
     <h1>This is the year 2017</h1>
+    <br>
+    <h3>All public Bluebike data began in January 2015.</h3>
+    <h3>There were a total of 1,313,774 total bike rides recorded during this year.</h3>
+    <h3>An increase of 6.27% compared to the previous year, and 17.03% increase since 2015.</h3>
+    <br>
 </head>
+
+<body>
+    <img logo src="{{ url_for('static', filename='MonthlyRides3.png' )}}" class="center" />
+    <h5>Based on this chart we are able to see the rides for the year 2017 broken down by month.</h5>
+    <h5>Clearly, the summer and warm months have a larger amount of rides then in the winter.</h5>
+    <h5>February recorded the least rides (17.27k) and August is recorded having the most rides (190.65k).</h5>
+    <h5>Therefore, we can see an increase of 1,003.94% from February to August in total rides per month.</h5>
+    <h5>For the second year in a row the proportion of increase from the least to most popular months has decreased. This can actually be seen as 
+        beneficial, as it concludes that the amounth of monthly rides are becoming more consist on a month to month basis, and not having only a few 
+        months that spike in rides.
+    </h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='UserType3.png' )}}" class="center" />
+    <h5>Bluebike categories users by two types, Customer and Subscriber.</h5>
+    <h5>A Subscriber has a monthly or annual membership while a Customer is a single use ride.</h5>
+    <h5>Continuously the Subscriber proportion has increased since 2015 (by 27.42%), which gives Bluebike a more stable customer basis than that of Customer single use riders</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='TripDurationUser3.png' )}}" class="center" />
+    <h5>When looking at the average trip during (in seconds) by user type, we notice for the first time a more consistant trend without outliers.</h5>
+    <h5>This limited variation in average ride time by user type on a month to month basis can be reflected due to a more regular customer basis.</h5>
+    <h5>The average trip duration for Customers is 3,160 seconds (or 52.66 minutes). and the average trip duration for Subscribers is 763.28 seconds (or 12.72 minutes).</h5>
+    <h5>It is notable however though, that Customers have average rides that are 313.99% longer than that of Subscribers.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='Top5Start3.png' )}}" class="center" />
+    <h5>The top 5 annually most started from Bluebike stations are indicated in this graph, along with their corresponding Subscriber and User amounts.</h5>
+    <h5>The most popular station is at MIT with 35,750 total rides in 2017. For the second year in a row this station has been the most started from Bluebike station.</h5>
+    <h5>Subscibers with memberships account for 89.40% of all rides at the top 5 most used starting stations, a larger proportion than the previous year by 8.53%.</h5>
+    <br>
+</body>
 
 {% endblock %}
