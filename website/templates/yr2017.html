@@ -39,6 +39,30 @@
     <h5>The most popular station is at MIT with 35,750 total rides in 2017. For the second year in a row this station has been the most started from Bluebike station.</h5>
     <h5>Subscibers with memberships account for 89.40% of all rides at the top 5 most used starting stations, a larger proportion than the previous year by 8.53%.</h5>
     <br>
+    <img logo src="{{ url_for('static', filename='Top5End3.png' )}}" class="center" />
+    <h5>The top 5 annually most started from Bluebike stations are indicated in this graph, along with their corresponding Subscriber and User amounts.</h5>
+    <h5>The most popular station is at MIT with 32,150 total rides in 2017. Notably again, this station remains as the most used, making it important for Bluebike.</h5>
+    <h5>Consistently, we still see the majority of riders ending at the top 5 finishing stations are Subscribers, accounting for 89.76% of the rides.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='Boxplot3.png' )}}" class="center" />
+    <h5>The median amount of rides that finish at an ending station is 2,420 with first and third quartiles having 74 and 7,540 rides respectively.
+        We can note that the trend continues to fall of first quartile values for the average amount of rides, concluding that more stations have become less used.
+    </h5>
+    <h5>This year, we can see the most amount of stations being considered outliers, 10 in total, showing they are significantly used more frequently.</h5>
+    <h5>Considering this large disparity, having these most used stations be maintained properly is vital to the success of Bluebike due to their popularity.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='GenderUserAmount3.png' )}}" class="center" />
+    <h5>Gender is indicated in this graph by 1 = Male, 2 = Female, 0 = No response.</h5>
+    <h5>As we can see, this is the first year where all the Customers did not report gender.</h5>
+    <h5>Subscribers continue to be male dominated, being 75.53% of their riders. Female subscribers making up 24.29% of riders and non-responding subscribers account for 0.61%.</h5>
+    <h5>Based on these demographics continuing to be a consistant trend, it would be advisable for Bluebike to promote to their female audience.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='BirthYearAmount3.png' )}}" class="center" />
+    <h5>Users of Bluebike have the ability to report their birth year. For 210,947 of the rides (16.06%) birth year was not reported.</h5>
+    <h5>The most amount of rides were found to have been taken by respondents born in 1989, making them 28 in 2017.</h5>
+    <h5>The millennial generation (born between 1981 and 1999) represents the largest proportion of Bluebike riders (89.93%).</h5>
+    <br>
+    <br>
 </body>
 
 {% endblock %}
