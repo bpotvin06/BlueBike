@@ -5,6 +5,63 @@
 
 <head>
     <h1>This is the year 2018</h1>
+    <br>
+    <h3>All public Bluebike data began in January 2015.</h3>
+    <h3>There were a total of 1,767,806 total bike rides recorded during this year.</h3>
+    <h3>An increase of 57.48% compared to the previous year, and 34.56% increase since 2015.</h3>
+    <h3>This year marks the most growth seen so far.</h3>
+    <br>
 </head>
+
+<body>
+    <img logo src="{{ url_for('static', filename='MonthlyRides4.png' )}}" class="center" />
+    <h5>Based on this chart we are able to see the rides for the year 2018 broken down by month.</h5>
+    <h5>Clearly, the summer and warm months have a larger amount of rides then in the winter.</h5>
+    <h5>January recorded the least rides (40.93k) and July is recorded having the most rides (242.92k).</h5>
+    <h5>Therefore, we can see an increase of 493.5% from January to July in total rides per month.</h5>
+    <h5>The mass expansion in Bluebike usage is largely due to adding stations into neighborhoods: Somerville, Brookline, Roxbury, Dorchester and more in the Boston area.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='UserType4.png' )}}" class="center" />
+    <h5>Bluebike categories users by two types, Customer and Subscriber.</h5>
+    <h5>A Subscriber has a monthly or annual membership while a Customer is a single use ride.</h5>
+    <h5>For the first time we notice the proportion of Customers growing from the previous year (by 2.8%).</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='TripDurationUser4.png' )}}" class="center" />
+    <h5>When looking at the average trip during (in seconds) by user type, Subscribers remain more consistant in trip duration than Customers.</h5>
+    <h5>The average trip duration for Customers is 4,420.83 seconds (or 1.228 hours) and the average trip duration for Subscribers is 885.12 seconds (or 14.75 minutes).</h5>
+    <h5>The most signicant outlier in this analysis can be seen in the Customers during October. Without this outlier, customers average trip duration would be 4,115.45 seconds 
+        (or 1.143 hours). Including the outlying October data increases customers average trip duration by 7.42%.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='Top5Start4.png' )}}" class="center" />
+    <h5>The top 5 annually most started from Bluebike stations are indicated in this graph, along with their corresponding Subscriber and User amounts.</h5>
+    <h5>The most popular station is (again) at MIT with 53,850 rides in 2018. Noting  for the third year in a row this is the most popular station.</h5>
+    <h5>Subscibers with memberships account for 90.36% of all rides at the top 5 most used starting stations.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='Top5End4.png' )}}" class="center" />
+    <h5>The top 5 annually most ending from Bluebike stations are indicated in this graph, along with their corresponding Subscriber and User amounts.</h5>
+    <h5>The most popular station is at MIT with 49,630 rides ending there. 
+        Including the other MIT station listed in the top 5, these top 2 stations alone account for 5.43% of the total rides in 2018.</h5>
+    <h5>Consistently, we still see the majority of riders ending at the top 5 finishing stations are Subscribers, accounting for 89.66% of the rides.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='Boxplot4.png' )}}" class="center" />
+    <h5>The median amount of rides that finish at an ending station is 1,950 with first and third quartiles having 340 and 8,480 rides respectively.
+        Though the median value has decreased since the previous year, the first and third quartile values have increased.</h5>
+    <h5>This year, we can see the most amount of stations being considered outliers, 12 in total, showing they are significantly used more frequently.</h5>
+    <h5>Considering this large disparity, having these most used stations be maintained properly is vital to the success of Bluebike due to their popularity.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='GenderUserAmount4.png' )}}" class="center" />
+    <h5>Gender is indicated in this graph by 1 = Male, 2 = Female, 0 = No response.</h5>
+    <h5>This year, we notice the return of some Customers reporting gender, but the majority (65.38%) did not report. </h5>
+    <h5>Subscribers continue to be male dominated, being 74.31% of their riders. Female subscribers making up 24.93% of riders and non-responding subscribers account for 0.76%.</h5>
+    <h5>Continuously we see the trend of Bluebike riders being heavily male-dominated.</h5>
+    <br>
+    <img logo src="{{ url_for('static', filename='BirthYearAmount4.png' )}}" class="center" />
+    <h5>Users of Bluebike have the ability to report their birth year. For only 9,592 of the rides (0.54%) birth year was not reported.</h5>
+    <h5>Interestingly enough there is found to be a spike in riders born in 1969, 223,657 riders in total making up 12.65% of rides. 
+        Either this is truly a spike in an age demographic joining Bluebike (they would have been 49 years old in 2018), or this is due to false reporting by users.</h5>
+    <h5>Besides that outlier, the most amount of rides were found to have been taken by respondents born in 1992, making them 26 in 2018.</h5>
+    <br>
+    <br>
+</body>
 
 {% endblock %}
